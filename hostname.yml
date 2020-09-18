@@ -1,0 +1,7 @@
+---
+- name: AWX
+  hosts: 
+    - oh_hostname
+
+  roles:
+    - hostname
