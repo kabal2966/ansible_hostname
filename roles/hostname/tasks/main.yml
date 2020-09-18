@@ -1,0 +1,15 @@
+---
+# tasks file for hostname
+- name: Zisti home premennu
+  shell: echo $HOME
+  register: home_res
+
+- debug:
+    var: home_res.stdout
+
+- name: Zisti hostname
+  shell: hostname
+  register: host_res
+  
+- debug:
+    var: host_res.stdout 

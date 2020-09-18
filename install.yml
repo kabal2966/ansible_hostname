@@ -1,0 +1,8 @@
+---
+- name: AWX
+  hosts: 
+    - ubuntu
+
+  roles:
+    # - docker
+    - awx
